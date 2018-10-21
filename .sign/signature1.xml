@@ -2,6 +2,14 @@
 <SignedInfo>
 <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></CanonicalizationMethod>
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
+<Reference URI=".gitattributes">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>Gh2+F2vCM7SZ01pX23UT8pQcmauXWfF3gwyRSb6ZAFs=</DigestValue>
+</Reference>
+<Reference URI="LICENSE">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>KD6mzCmXoacNoASeCa35MXu2DKG1Enm2UZa4OmnhmWs=</DigestValue>
+</Reference>
 <Reference URI="LICENSE.APLv2">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>z8d0m5b2O9McPEK1xHG/dWgUBT6EfBDz6wA0F7xSPTA=</DigestValue>
@@ -10,9 +18,13 @@
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>ijjaB8GEO5OJP/jK6n7Hr3vZFI9gy8ocoDhviViKNnU=</DigestValue>
 </Reference>
+<Reference URI="README.md">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>tBs/9oV6SN5jslQ+S5aKSN3dtx7z7aDK4yOF2myg0Sk=</DigestValue>
+</Reference>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>IXAuUpVXogGSyOa8MwAcKb257Uvub44kOB2PVLfHM0s=</DigestValue>
+<DigestValue>43GnoKj4kS5mmsFrVlH7bsSf+5sZbx0JYJM994rJHh8=</DigestValue>
 </Reference>
 <Reference URI="bg.xcf">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -20,7 +32,7 @@
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>oT0STRmlhZg1M/TLfTrF65DMeqFouFeo3Pjn0Tdt53s=</DigestValue>
+<DigestValue>Me7tadfJCQuI42eydpkSpxexx0GWxUsc7iPka9ZIbDg=</DigestValue>
 </Reference>
 <Reference URI="css%2Fstyle.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -44,7 +56,11 @@
 </Reference>
 <Reference URI="js%2Fapp.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>mL7sKPq4i2pyBhArkjEgxtMowEGlOgIAb9PreJEF7Qo=</DigestValue>
+<DigestValue>VLmc+EhdqtECc29GKT6ktotsJXzk1SKtePW/Vf+UHyY=</DigestValue>
+</Reference>
+<Reference URI="screenshot.jpg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>M+/oe8iV+pcGQ8o33b1S09cjagwVEYr8ABR50O1Ogh4=</DigestValue>
 </Reference>
 <Reference URI="version.txt">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -59,11 +75,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-kXeJs6SF7vGw5LhP/tIF2O6aH8v1+k+K37aJliF39DgmJfKBntdisuMTJmIIXj1Q5VZ4zIjxoNEi
-7zWv0I2WI9lYfCYd8oQwHMA/3CEzV5jrzHIU+GlBOqKQHYN1iObqk/nWMYEPQC59JyMaOHm1qSnw
-rltPtIuIMvnp+OvhAopl24qL8JQzeyFxBHTcfMe15hyVYugL7KrfH28mQui5lO6Kt2BmRqW4Fwen
-NdesN0uNW5xxm97k9+t/a4R44DryY4UJSCwqKhAzRaImzsFnlfStPAeHP9qn2W6D6GleBvukBpOJ
-oSSI6Z8i8o/MNIPZtsDEO3p+GEGQHgj6rZMeJg==
+N5kk8f8RZ0SPYhB1kUwLkpP4N+O0fU91Uy+vcS07j6DbQIR2ZsvJqkxw5XsE0hmFtpDhNOOi9oZr
+UVaTBvWetIcmfhVPK6WRXt+QaR8qFz9WDelBiGdYmzAYTdLMVyOVkz1XOurGeTkKjA58IgevMl8m
+INB9fe+6esW1IfLkoUa++fNLFO+KgZ8bS2sZ/0pe+NuZbPNjNlyocfpsVfU4nArNg4+HKyPoj6ZK
+lSrgXYmlzyu+hke6L0Qs1MavzZZXQFVURwfAYb7acH5AitlLglGWYtNH1PKwo7qOr/QxH265TPjJ
+EhDuL+euvm3oCGVzZTnNC1bkPWmRgHjEdgN0Jw==
 </SignatureValue>
 <KeyInfo>
 <X509Data>

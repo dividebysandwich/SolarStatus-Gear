@@ -383,26 +383,43 @@
 		xmlhttp.send();
 	}
 
-	/**
-	 * Sets default event listeners.
-	 * @private
-	 */
-	function setDefaultEvents() {
-		document.addEventListener("tizenhwkey", keyEventHandler);
-		//        document.querySelector("#area-news").addEventListener("click", showNextNews);
-	}
 
+	var dataFetchTimer = false;
+	var animationTimer = false;
+	
 	/**
 	 * Initiates the application.
 	 * @private
 	 */
 	function init() {
-		setDefaultEvents();
-
+		document.addEventListener("tizenhwkey", keyEventHandler);
 		getDataFromXML();
-		setInterval(getDataFromXML, 20000);
-		setInterval(advanceAnimation, 20);
+		dataFetchTimer = setInterval(getDataFromXML, 20000);
+		animationTimer = setInterval(advanceAnimation, 20);
+		document.addEventListener(visibilityChange, handleVisibilityChange);
 	}
 
+	function handleVisibilityChange(){
+		if (document.visibilityState === 'hidden') {
+			console.log("Page is now hidden.");
+			if (dataFetchTimer !== false) {
+				clearInterval(dataFetchTimer);
+				dataFetchTimer = false;
+			}
+			if (animationTimer !== false) {
+				clearInterval(animationTimer);
+				animationTimer = false;
+			}
+		} else {
+			console.log("Page is now visible.");
+			getDataFromXML();
+			if (dataFetchTimer === false)
+				dataFetchTimer = setInterval(getDataFromXML, 20000);
+			if (animationTimer === false)
+			    animationTimer = setInterval(advanceAnimation, 20);
+		}
+	}
+	
 	window.onload = init;
+	
 }());

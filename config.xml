@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://playspoon.com/SolarStatus" version="1.0.0" viewmodes="maximized">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://playspoon.com/SolarStatus" version="1.0.0" viewmodes="maximized">
     <access origin="https://boeheim.duckdns.org" subdomains="true"></access>
     <tizen:application id="82aM4uveLZ.SolarStatus" package="82aM4uveLZ" required_version="4.0"/>
     <content src="index.html"/>
