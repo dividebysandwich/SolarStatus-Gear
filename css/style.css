@@ -1,0 +1,142 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#container {
+	position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    overflow-y: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#header {
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0, 80, 179, 1);
+    display: table;
+    text-align: center;
+}
+
+#contents {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    display: table;
+    text-align: center;
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index:0;
+}
+
+#footer {
+    width: 100%;
+    height: 20%;
+    background-color: rgba(39, 119, 217, 1);
+    display: table;
+    text-align: center;
+}
+
+
+#soc {
+    position: fixed;
+    width: 45px;
+    text-align: center;
+    top: 175px;
+    left: 15px;
+    font-size: 0.5em;
+    color: #ffffff;    
+    z-index: 1;
+}
+
+#pv {
+    position: fixed;
+    text-align: left;
+    top: 35px;
+    left: 215px;
+    font-size: 0.9em;
+    color: #ffff00;
+    z-index: 1;
+}
+
+#use {
+    position: fixed;
+    text-align: left;
+    top: 295px;
+    left: 215px;
+    font-size: 0.9em;
+    color: #00ff00;
+    z-index: 1;
+}
+
+#battuse {
+    position: fixed;
+    text-align: left;
+    top: 145px;
+    left: 90px;
+    font-size: 0.8em;
+    color: #2244dd;
+    z-index: 1;
+}
+
+#grid {
+    position: fixed;
+    text-align: left;
+    top: 145px;
+    left: 230px;
+    font-size: 0.8em;
+    color: #ff0000;
+    z-index: 1;
+}
+
+#battfill {
+    position: fixed;
+    text-align: left;
+    bottom: 142px;
+    left: 16px;
+    font-size: 0.5em;
+    color: blue;
+    height: 0px;
+    width: 40px;
+    z-index: 0;
+    background-color: blue;
+}
+
+#myCanvas {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 360;
+	height: 360;
+	z-index: 2;
+}
+
+.header-title {
+    margin: 0 auto;
+    padding: 0;
+    font-weight: bold;
+    font-size: 2.0em;
+    color: #ffffff;
+}
+
+.subject {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.pagenum {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1.6em;
+    color: #ffffff;
+}
