@@ -3,6 +3,7 @@
 	<name>SolarStatus</name>
 	<comment></comment>
 	<projects>
+		<project>SolarWidget</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -369,7 +369,7 @@
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
 				console.log("Fetch result: "+xmlhttp.responseText);
-				result = xmlhttp.responseText.split('\n');
+				var result = xmlhttp.responseText.split('\n');
 				if (result.length >4) {
 					arrayData = result;
 					showNews();
