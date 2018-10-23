@@ -396,7 +396,7 @@
 		getDataFromXML();
 		dataFetchTimer = setInterval(getDataFromXML, 20000);
 		animationTimer = setInterval(advanceAnimation, 20);
-		document.addEventListener(visibilityChange, handleVisibilityChange);
+		document.addEventListener('visibilitychange', handleVisibilityChange);
 	}
 
 	function handleVisibilityChange(){
