@@ -24,7 +24,7 @@
 </Reference>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>2l0PzU/UFTwXrfcn5OF6UylGfXM3+A9GPxzT3rP+E6A=</DigestValue>
+<DigestValue>lwLHi/shPGuxT4j/lyVkopDt9Wk1qvKM2vgTpSx2LJc=</DigestValue>
 </Reference>
 <Reference URI="bg.xcf">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -56,7 +56,7 @@
 </Reference>
 <Reference URI="js%2Fapp.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>2u6gBrNkxOQHyjh3sQ3EV084xP4kTNz8Zl3kSKsZ+CQ=</DigestValue>
+<DigestValue>P0G/FoOc/EZYRVvH/H6Rj6XsHxzoBDRDHIPUIh8ofpQ=</DigestValue>
 </Reference>
 <Reference URI="screenshot.jpg">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -80,7 +80,7 @@
 </Reference>
 <Reference URI="widget%2FSolarWidget%2Fjs%2Fapp.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>UZtx86DAUdiKyIe2pTCi3vHKFxiiu1mS88ZZwppz7OE=</DigestValue>
+<DigestValue>e7imv24Ol8WGyKHnTzxvvMuJrnTHuLsO2k3bebc8JSc=</DigestValue>
 </Reference>
 <Reference URI="widget%2FSolarWidget%2Fpreview.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -95,11 +95,11 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-Vu6OgNQcnTDbctrW2VeuBAn7zeyZ3Rm2L3SDRHk9ewR1rZf+/f/OmiQAtj5OeuIkoqJU+zyYXCaJ
-oL6nj+9SnraXZ7IAuxPzVLymOd5W8go0ieqCUC5PBX5Xf2Jj+4Ge7vg2TkxpjbHxsmy9DRxb69FJ
-fFvRetGkoQYNJl2y/jfAYShKS++vRsdwW57QVUwWafD5jDh4ySVDBtpyb5WLBA5/x5ENtrjejgyO
-P2MNdS5KC35yA/MllaEDJXT1HHB8Qed9XXTUzgF0XQPWE3J4MiL1lAj1Ita/ABLmGyvLB8044CsF
-EvOeGlgJlfrfBgfwPiwZ2nRTvAp/eCa9Vc0oJQ==
+FaqpMpuUd5DMvRd07kCSOu4nLwmkgeJDGjb2q5JgZYEbrwJ5195m5auRHbMfMKyzJi6t2580GMNh
+N4brFVfd6Gy2swRb4yxbqCMbRqcd1iLLCiVkmIkrdZnuV6ASiu13gVmfYqpRul2ntwY0m9ncibpH
+foK15/Lhzb1GXYKQqRCPWq7amUDB16irunOQ8BS8W+JKW2CtbYmfHRR5WTI6SncO4JsoCp2aJkX6
+g9qBjRq5vIZs9clBWuVQ00MUWWc7YrFMEQumL7Xzf6bLlqaarbC+ZwjBV8leopQfvU7CZZYXZt2b
+L1AkNmN90AM7/4EXLN9pC9x8cncvrkpVxTQAsg==
 </SignatureValue>
 <KeyInfo>
 <X509Data>

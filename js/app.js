@@ -396,6 +396,7 @@
 	}
 	function drawHistogram(data, name, xpos, ypos, minvalue) {
 		var outerdiv = document.createElement('div');
+		var maxvalue = 10;
 		outerdiv.id = "histogram_"+name;
 		outerdiv.style.position = "absolute";
 		outerdiv.style.top = ypos+50 + "px" ;
@@ -403,14 +404,16 @@
 		outerdiv.style.height = 51 + "px";
 		outerdiv.style.width = (data.length - 40 + 1)+"px";
 		outerdiv.style.backgroundColor="#222222";
-		if (name != "battsoc") {
-			var maxvalue = 1;
-			for (var i=40; i< data.length; i++) {
-				if (data[i]> maxvalue)
-					maxvalue = data[i];
+		if (name !== "battsoc") {
+			var i;
+			for (i=40; i < data.length; i++) {
+				if (parseInt(data[i]) > maxvalue) {
+					maxvalue = parseInt(data[i]);
+				}
 			}
-			if (maxvalue < minvalue) 
+			if (maxvalue < minvalue) {
 				maxvalue = minvalue;
+			}
 		} else {
 			maxvalue = 100;
 			minvalue = 1;
@@ -420,7 +423,7 @@
 			innerdiv.style.position = "absolute";
 			innerdiv.style.bottom = "0px";
 			innerdiv.style.left = i-40+"px";
-			innerdiv.style.height = parseInt(parseFloat(data[i]) / parseFloat(maxvalue) * 50.0)+"px";
+			innerdiv.style.height = (data[i] / maxvalue * 50.0)+"px";
 			innerdiv.style.width = "1px";
 			innerdiv.style.z_index = "4";
 			if (name == "use")
