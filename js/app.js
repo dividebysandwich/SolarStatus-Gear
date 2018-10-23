@@ -381,8 +381,78 @@
 		};
 
 		xmlhttp.send();
+		getHistogram("pv", 60, 20);
+		getHistogram("use", 215, 185);
+		getHistogram("grid", 215, 20);
+		getHistogram("battsoc", 60, 185);
 	}
 
+	function clearHistogram(name){
+		var toremove = document.getElementById("histogram_"+name);
+		if (toremove) {
+			toremove.parentNode.removeChild(toremove);
+		}
+		
+	}
+	function drawHistogram(data, name, xpos, ypos, minvalue) {
+		var outerdiv = document.createElement('div');
+		outerdiv.id = "histogram_"+name;
+		outerdiv.style.position = "absolute";
+		outerdiv.style.top = ypos+50 + "px" ;
+		outerdiv.style.left = xpos+"px";
+		outerdiv.style.height = 51 + "px";
+		outerdiv.style.width = (data.length - 40 + 1)+"px";
+		outerdiv.style.backgroundColor="#222222";
+		if (name != "battsoc") {
+			var maxvalue = 1;
+			for (var i=40; i< data.length; i++) {
+				if (data[i]> maxvalue)
+					maxvalue = data[i];
+			}
+			if (maxvalue < minvalue) 
+				maxvalue = minvalue;
+		} else {
+			maxvalue = 100;
+			minvalue = 1;
+		}
+		for (var i=40; i< data.length; i++) {
+			var innerdiv = document.createElement('div');
+			innerdiv.style.position = "absolute";
+			innerdiv.style.bottom = "0px";
+			innerdiv.style.left = i-40+"px";
+			innerdiv.style.height = parseInt(parseFloat(data[i]) / parseFloat(maxvalue) * 50.0)+"px";
+			innerdiv.style.width = "1px";
+			innerdiv.style.z_index = "4";
+			if (name == "use")
+				innerdiv.style.backgroundColor = "#00ff00";
+			else if (name == "pv")
+				innerdiv.style.backgroundColor = "#ffff00";
+			else if (name == "grid")
+				innerdiv.style.backgroundColor = "#ff0000";
+			else
+				innerdiv.style.backgroundColor = "#2233ff";
+			outerdiv.appendChild(innerdiv);
+		}
+		document.getElementsByTagName('body')[0].appendChild(outerdiv);
+		
+	}
+	
+	function getHistogram(type, xpos, ypos) {
+		var xmlhttp = new XMLHttpRequest();
+		xmlhttp.open(XML_METHOD, "http://boeheim.duckdns.org/status/last"+type+".txt", false);
+		xmlhttp.onreadystatechange = function() {
+			if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+				var result = xmlhttp.responseText.split('\n');
+				if (result.length >4) {
+					clearHistogram(type);
+					drawHistogram(result, type, xpos, ypos);
+				}
+				xmlhttp = null;
+			}
+		};
+
+		xmlhttp.send();
+	}
 
 	var dataFetchTimer = false;
 	var animationTimer = false;
