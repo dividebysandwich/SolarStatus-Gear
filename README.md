@@ -1,6 +1,6 @@
 # SolarStatus-Gear
 
-![App on watch](https://i.imgur.com/IDzvNDd.png)
+![App on watch](https://i.imgur.com/QO43507.jpg)
 
 This is an energy status display for the Samsung Galaxy Watch or similar Tizen devices.
 The data is fetched from a Raspberry Pi or Beaglebone or any http web server for that matter. Getting the data into the relevant files is done elsewhere, this is just a display. There's one file for the core values, and then two text files for the histogram data for PV energy production and domestic power usage.
